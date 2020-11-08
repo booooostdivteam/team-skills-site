@@ -1,0 +1,103 @@
+/****************************************
+GENERAL
+***************************************/
+
+.tmo-pink-bg {
+  background-color: #e20074;
+}
+
+.tmo-pink-text {
+  color: #e20074;
+}
+
+
+
+/****************************************
+SIDEBAR
+***************************************/
+
+.side-navbar-fixed {
+    position: fixed;
+}
+
+.sidebar hr.sidebar-divider {
+    margin: 0 1rem;
+}
+
+.bi-person-circle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/****************************************
+MAIN CONTENT
+***************************************/
+
+#wrapper #content-wrapper #content {
+    color: #000;
+    background-color: #fff;
+}
+
+.team-member-name-container {
+  padding-left: 1.25rem; 
+}
+
+.team-member-name {
+  margin-top: 50px;
+}
+
+.card {
+  min-height: 100%;
+}
+
+.card-header {
+    background-color: #f2f2f2;
+}
+
+.card.shadow {
+    box-shadow: 6px 10px 12px rgba(0,0,0,.2) !important;;
+}
+
+
+.progress {
+    background-color: #f2f2f2;
+}
+
+
+
+/***************************************
+MEDIA QUERIES
+***************************************/
+
+@media (min-width: 992px) {
+  #wrapper #content-wrapper {
+    margin-left: 224px;
+  }
+
+  .grow:hover {
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+  }
+}
+
+@media(min-width: 768px) {
+  #wrapper #content-wrapper {
+    margin-left: 224px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #wrapper #content-wrapper {
+    margin-left: 104px;
+  }
+
+  .sidebar-brand-text {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+}
