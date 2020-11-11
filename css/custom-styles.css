@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/** COLORS **/
+/** Colors **/
 .tmo-pink-bg {
   background-color: #e20074;
 }
@@ -15,52 +15,8 @@ html {
   color: #e20074;
 }
 
-.light-gray-bg {
-  background-color: #f2f2f2;
-}
-
-.tmo-dark-pink-bg {
-  background-color: #BA0060;
-}
-
-.btn-custom {
-  color: #fff;
-  background-color: #e20074;
-}
-
-.btn-custom:hover {
-    background-color: #BA0060;
-}
-
-/* Underline From Center */
-.hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #2098D1;
-  height: 4px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
+.text-black {
+  color: #000;
 }
 
 
@@ -71,13 +27,22 @@ SIDEBAR
 
 .side-navbar-fixed {
   position: fixed;
+  background-color: #f2f2f2;
 }
 
 .sidebar-brand-text {
   background-color: #000;
 }
 
+.sidebar-brand-text img {
+    max-width: 70px;
+}
+
 .sidebar-dark .sidebar-heading {
+    color: #000;
+}
+
+.sidebar-dark .nav-item .nav-link {
     color: #000;
 }
 
@@ -87,21 +52,19 @@ SIDEBAR
 }
 
 .sidebar-dark .nav-item .nav-link {
-    color: #000; 
-}
-
-.sidebar-dark .nav-item .nav-link:focus, 
-.sidebar-dark .nav-item .nav-link:hover {
-  color: #000;
-}
-
-.sidebar .bitmoji {
-  width: 22px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;  
 }
 
 .sidebar-dark .bi-chevron-right {
   float: right;
+}
+
+.sidebar-dark .nav-item .nav-link:hover,
+.sidebar-dark .nav-item .nav-link:focus {
+   color: #e20074;
 }
 
 
@@ -115,9 +78,13 @@ MAIN CONTENT
     background-color: #fff;
 }
 
-.team-member-name {
-  margin-top: 50px;
-  color: 
+.name-container {
+  margin-top: 60px;
+}
+
+.bitmoji {
+  width: 107px;
+  border: 2px solid #000;
 }
 
 .card {
@@ -133,12 +100,26 @@ MAIN CONTENT
   background-color: #000;
 }
 
-/** PROGRESS BAR **/
+.team-member-title {
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -ms-animation-delay: .1s;
+  -o-animation-delay: .1s;
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+    background: rgba(226, 0, 116, 0.5);
+}
+
+/** Progress bar animation **/
 .meter {
     height: 1rem;
     position: relative;
     overflow: hidden;
     border-radius: .35rem;
+    background-color: #f2f2f2;
 }
 
 .meter span { 
@@ -186,14 +167,6 @@ MEDIA QUERIES
   #wrapper #content-wrapper {
     margin-left: 224px;
   }
-
-  .grow:hover {
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-  }
 }
 
 @media(min-width: 768px) {
@@ -201,21 +174,25 @@ MEDIA QUERIES
     margin-left: 224px;
   }
 
-  /* Icon Forward */
+  .sidebar-brand-text img {
+    max-width: 150px;
+}
+
+  /** Hover Icon Forward **/
   .hvr-icon-forward {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
   }
   .hvr-icon-forward .hvr-icon {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
